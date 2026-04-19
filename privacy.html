@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Local Business Lead Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .policy-content {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 60px;
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+        .policy-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        .policy-content h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: var(--accent-hover);
+        }
+        .policy-content h3 {
+            font-size: 1.2rem;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        .policy-content p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+        .policy-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+        .policy-content ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .policy-content strong {
+            color: var(--text-primary);
+        }
+        .policy-content code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #d1d5db;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container navbar">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"></div>
+            Lead Extractor
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Product</a>
+            <a href="#">Help</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="policy-content">
+            <h1>Privacy Policy</h1>
+            <p style="color: var(--text-muted); font-size: 0.95rem;"><strong>Effective Date:</strong> April 2026</p>
+
+            <p style="margin-top: 24px;">This Privacy Policy describes how the "Local Business Lead Extractor (No Login Required)" Chrome Extension ("the Extension", "we", "us", or "our") handles data when you use it. We are committed to protecting your privacy and being transparent about our data practices.</p>
+            
+            <div class="divider" style="margin: 40px 0;"></div>
+
+            <h2>1. Description of the Extension</h2>
+            <p>The Extension allows you to extract business contact information (such as emails, phone numbers, and Facebook Pixel IDs) directly from public directory websites and export them as a CSV file.</p>
+
+            <h2>2. Information We Collect and Process</h2>
+
+            <h3>Data Extraction is Local</h3>
+            <p>The Extension operates <strong>entirely locally on your device</strong>. All lead extraction, website scanning, and data parsing are performed on your local computer within your Chrome browser.</p>
+
+            <ul>
+                <li><strong>Extracted Leads Data:</strong> The business leads you extract (names, phone numbers, emails, URLs) are saved temporarily using the Chrome <code>storage</code> API local storage. This data is kept strictly on your machine and is never transmitted to us or any third-party servers.</li>
+                <li><strong>Personal Information:</strong> We <strong>do not</strong> collect, store, or transmit your personal identifiable information (PII), browsing history, keystrokes, or IP addresses.</li>
+            </ul>
+
+            <h3>License Verification</h3>
+            <p>If you upgrade to the Pro tier, the Extension requires a license key. The Extension communicates with our secure licensing server (creem.io) via a standard API request solely for the purpose of validating the license key you provide. No user browsing data or extracted leads are sent during this process.</p>
+
+            <h2>3. Chrome Permissions Used and Why</h2>
+            <p>To provide its core functionality, the Extension requests the following browser permissions. Each permission is strictly used for its intended purpose:</p>
+            <ul>
+                <li><code>activeTab</code> & <code>tabs</code>: Used to interact with the currently active page you are viewing to identify and scan business directories.</li>
+                <li><code>scripting</code>: Used to inject temporary background scripts into the pages you choose to scan to read the public contact information.</li>
+                <li><code>storage</code>: Used to locally save your extraction queue, custom CSS selector configurations, application state, and the locally extracted lead data for CSV generation.</li>
+                <li><code>downloads</code>: Used strictly to allow you to download the extracted data to your computer as a <code>.csv</code> file.</li>
+                <li><code>host_permissions</code> (<code>&lt;all_urls&gt;</code>): Required because business directories and final business websites can be hosted on any domain. We must be able to fetch the target webpage HTML on your behalf to extract contact elements.</li>
+            </ul>
+
+            <h2>4. Third-Party Services</h2>
+            <p>We do not share, sell, rent, or trade your data with any third parties.</p>
+            <ul>
+                <li><strong>CSV Export:</strong> Generated natively in your browser.</li>
+                <li><strong>License System:</strong> Handled via Creem.io strictly for validating transaction and license status.</li>
+            </ul>
+
+            <h2>5. User Controls and Data Retention</h2>
+            <p>Since all extracted data is stored locally in your browser, you maintain full control over it. You can delete the data at any time by:</p>
+            <ul>
+                <li>Using the "Clear" button within the Extension's interface.</li>
+                <li>Navigating to Chrome's settings and clearing the Extension's local storage/data.</li>
+                <li>Uninstalling the Extension, which will automatically purge all associated local data.</li>
+            </ul>
+
+            <h2>6. Updates to this Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Updated versions will be published with a revised "Effective Date" at the top of the policy.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or how your data is handled, please contact us at: <a href="mailto:support@workfern.com" style="color: var(--accent-hover);">support@workfern.com</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-nav">
+                <a href="mailto:support@workfern.com">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>© 2026 Workfern. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
